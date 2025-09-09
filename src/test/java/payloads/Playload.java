@@ -12,7 +12,7 @@ public class Playload {
 
 	private static final Random random = new Random();
 
- public static	Product Playload() {
+ public static	Product productplayload() {
 
 		String name = faker.commerce().productName();
 		double price = Double.parseDouble(faker.commerce().price());
