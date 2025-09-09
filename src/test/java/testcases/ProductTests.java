@@ -133,14 +133,31 @@ public void testGetProductByCategory() {
 	//@Test
 	public void testUpdatetheRecord() {
 		
-int productid=	configReader.getIntProperty("productId");
+  int productid=configReader.getIntProperty("productId");
 		
+Product updatePlayload= Playload.productplayload();
 		given()
-		
+		.contentType(ContentType.JSON)
+		.pathParam("id", productid)
 		.when()
+		.put(Routes.UPDATE_PRODUCT)
+		.then()
+		.statusCode(200)
+		.body("Title", equalTo(updatePlayload.getTitle()));
 		
+	}
+	
+	@Test
+	public void testDeleteRecord() {
+		  int productid=configReader.getIntProperty("productId");
+
+		given()
+		.pathParam("id", productid)
+		.when()
+		.delete(Routes.DELETE_PRODUCT)
 		.then()
 		.statusCode(200);
+		
 		
 	}
 }

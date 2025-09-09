@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\HP\AppData\Local\Temp\testng-eclipse--2040578576\testng-customsuite.xml</span>
+                    <span>C:\Users\HP\AppData\Local\Temp\testng-eclipse-1522267354\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
+                    <span class="method-stats">9 methods,   9 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,6 +104,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="testcases.ProductTests" class="method navigator-link" hash-for-method="testCreateProduct">testCreateProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testcases.ProductTests" class="method navigator-link" hash-for-method="testDeleteRecord">testDeleteRecord</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -168,6 +173,13 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="testDeleteRecord">
+                  </a> <!-- testDeleteRecord -->
+                  <span class="method-name">testDeleteRecord</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="testGetAllProductCategory">
                   </a> <!-- testGetAllProductCategory -->
                   <span class="method-name">testGetAllProductCategory</span>
@@ -220,7 +232,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\HP\AppData\Local\Temp\testng-eclipse--2040578576\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\HP\AppData\Local\Temp\testng-eclipse-1522267354\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -269,44 +281,48 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(9);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testCreateProduct')
 data.setCell(0, 2, 'testcases.ProductTests')
-data.setCell(0, 3, 4352);
+data.setCell(0, 3, 3008);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testGetAllProductCategory')
+data.setCell(1, 1, 'testGetLimitedProducts')
 data.setCell(1, 2, 'testcases.ProductTests')
-data.setCell(1, 3, 1206);
+data.setCell(1, 3, 2077);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testGetSortedProductDescending')
+data.setCell(2, 1, 'testGetAllProducts')
 data.setCell(2, 2, 'testcases.ProductTests')
-data.setCell(2, 3, 1070);
+data.setCell(2, 3, 1111);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testGetProductByCategory')
+data.setCell(3, 1, 'testGetAllProductCategory')
 data.setCell(3, 2, 'testcases.ProductTests')
-data.setCell(3, 3, 1062);
+data.setCell(3, 3, 646);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testGetLimitedProducts')
+data.setCell(4, 1, 'testGetSortedProductDescending')
 data.setCell(4, 2, 'testcases.ProductTests')
-data.setCell(4, 3, 914);
+data.setCell(4, 3, 623);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testGetSingleProductId')
+data.setCell(5, 1, 'testDeleteRecord')
 data.setCell(5, 2, 'testcases.ProductTests')
-data.setCell(5, 3, 885);
+data.setCell(5, 3, 599);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testGetAllProducts')
+data.setCell(6, 1, 'testGetSingleProductId')
 data.setCell(6, 2, 'testcases.ProductTests')
-data.setCell(6, 3, 874);
+data.setCell(6, 3, 565);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'testGetSortedProductAscending')
 data.setCell(7, 2, 'testcases.ProductTests')
-data.setCell(7, 3, 538);
+data.setCell(7, 3, 560);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testGetProductByCategory')
+data.setCell(8, 2, 'testcases.ProductTests')
+data.setCell(8, 3, 542);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -339,35 +355,39 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testCreateProduct</span>
-                <span class="method-start">771 ms</span>
+                <span class="method-start">459 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDeleteRecord</span>
+                <span class="method-start">3543 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGetAllProductCategory</span>
-                <span class="method-start">5205 ms</span>
+                <span class="method-start">4145 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGetAllProducts</span>
-                <span class="method-start">6416 ms</span>
+                <span class="method-start">4794 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGetLimitedProducts</span>
-                <span class="method-start">7296 ms</span>
+                <span class="method-start">5909 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGetProductByCategory</span>
-                <span class="method-start">8215 ms</span>
+                <span class="method-start">7990 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGetSingleProductId</span>
-                <span class="method-start">9285 ms</span>
+                <span class="method-start">8536 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGetSortedProductAscending</span>
-                <span class="method-start">10177 ms</span>
+                <span class="method-start">9107 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGetSortedProductDescending</span>
-                <span class="method-start">10719 ms</span>
+                <span class="method-start">9669 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
